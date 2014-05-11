@@ -74,7 +74,12 @@ namespace Kids_vs_IceCream
 
         public void startMoving()
         {
-            Houses = new List<House>();
+            for (int i=0; i<Houses.Count; ++i)
+            {
+                if (Houses[i].velocity == 0)
+                    Houses[i].velocity = 5;
+            }
+            //Houses = new List<House>();
         }
     }
 }

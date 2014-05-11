@@ -3,7 +3,6 @@ using System.Collections.Generic;
 
 namespace Kids_vs_IceCream
 {
-    //TODO Harder Killing
     public class LevelsDoc
     {
         private List<List<Kid>> Levels;
@@ -140,9 +139,9 @@ namespace Kids_vs_IceCream
         {
             List<Kid> ret = new List<Kid>();
             ret.Add(Kid.getKid1());
-            //ret.Add(Kid.getKid1());
-            //ret.Add(Kid.getKid1());
-            //ret.Add(Kid.getKid1());
+            ret.Add(Kid.getKid1());
+            ret.Add(Kid.getKid1());
+            ret.Add(Kid.getKid1());
             return ret;
         }
 

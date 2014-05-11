@@ -2,7 +2,6 @@
 
 namespace Kids_vs_IceCream
 {
-    //TODO DA se sredi
     public class Car : IMovingObject
     {
         private Bitmap imageWheelNotMoving;
