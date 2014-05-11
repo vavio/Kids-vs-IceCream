@@ -126,7 +126,8 @@ namespace Kids_vs_IceCream
             GameOverWindow gameOver = new GameOverWindow();
             writeToFile(gameOver.PlayerName, this.KidsKilled);
             this.KidsKilled = 0;
-            if (gameOver.ShowDialog() == DialogResult.OK)
+            DialogResult res=gameOver.ShowDialog();
+            if ( res== DialogResult.OK)
             {
                 Kids = new KidsDoc();
                 Bullets = new BulletsDoc();
@@ -136,6 +137,10 @@ namespace Kids_vs_IceCream
                 gameStarted = true;
                 Houses.startMoving();
                 StartWindow();
+            }
+            else if(res == DialogResult.No)
+            {
+                Application.Exit();
             }
             else
             {
