@@ -105,6 +105,7 @@ namespace Kids_vs_IceCream
             {
                 levelFinished();
                 timerNewHouse.Start();
+                timerNewCloud.Start();
                 graphics.DrawImageUnscaled(doubleBuffer, 0, 0);
                 if (Kids.isOver(CarItems))
                 {
@@ -175,6 +176,7 @@ namespace Kids_vs_IceCream
             {
                 //nextlevel
                 timerNewHouse.Stop();
+                timerNewCloud.Stop();
                 timerDrawing.Stop();
                 NextLevelWindow nextLevel = new NextLevelWindow();
                 if (nextLevel.ShowDialog() == DialogResult.OK)
