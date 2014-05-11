@@ -1,21 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Kids_vs_IceCream
 {
     public partial class NextLevelWindow : Form
     {
-
-        Graphics g;
+        private Graphics g;
         public Timer timer;
-        Bitmap bm;
+        private Bitmap bm;
 
         public NextLevelWindow()
         {

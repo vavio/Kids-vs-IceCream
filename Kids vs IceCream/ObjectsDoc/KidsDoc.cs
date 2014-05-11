@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Drawing;
-using System.Windows.Forms;
 using Kids_vs_IceCream.Objects;
 
 namespace Kids_vs_IceCream
@@ -25,13 +24,12 @@ namespace Kids_vs_IceCream
             {
                 iter.Move();
             }
-
         }
 
         public bool isOver(CarDoc car)
         {
             IMovingObject tmp = car.CarItems[car.BODY];
-            foreach(Kid k in Kids)
+            foreach (Kid k in Kids)
             {
                 if (k.X - 50 > tmp.X)
                 {
@@ -39,7 +37,6 @@ namespace Kids_vs_IceCream
                 }
             }
             return false;
-
         }
 
         public void DrawKids(Graphics g)
@@ -58,7 +55,7 @@ namespace Kids_vs_IceCream
             for (int i = this.Kids.Count - 1; i >= 0; --i)
             {
                 bool flag = false;
-                for (int j = bDoc.Bullets.Count - 1; j >= 0; --j )
+                for (int j = bDoc.Bullets.Count - 1; j >= 0; --j)
                     if (this.Kids[i].Hit(bDoc.Bullets[j]))
                     {
                         bDoc.Bullets.RemoveAt(j);
@@ -68,7 +65,7 @@ namespace Kids_vs_IceCream
                     }
                 if (flag)
                 {
-                    if(this.Kids[i].isDead())
+                    if (this.Kids[i].isDead())
                     {
                         this.Kids.RemoveAt(i);
                         ret++;

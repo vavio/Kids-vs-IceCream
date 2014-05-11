@@ -167,7 +167,7 @@ namespace Kids_vs_IceCream
             for (int i = 0; i < Rand.Next(CurrentLevel * 2, CurrentLevel * 3); ++i)
             {
                 int ran = Rand.Next(3);
-                if (ran== 0)
+                if (ran == 0)
                     ret.Add(new Kid(-30, 330, Rand.Next(3, 5), Properties.Resources.enemy_1_1, Properties.Resources.enemy_1_2, Rand.Next(1, 5)));
                 else if (ran == 1)
                     ret.Add(new Kid(-30, 330, Rand.Next(5, 7), Properties.Resources.enemy_2_1, Properties.Resources.enemy_2_2, Rand.Next(3, 8)));

@@ -6,6 +6,7 @@ namespace Kids_vs_IceCream
     {
         private int countDistance;
         private Bitmap rotatedImage;
+
         public bool seDvizi { get; set; }
 
         public Wheels(float x, float y, float velocity, bool seDvizi)

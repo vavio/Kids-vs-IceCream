@@ -6,7 +6,7 @@ namespace Kids_vs_IceCream
     public class GameWindow : Form
     {
         private Form1 startingBackground;
-        
+
         private Random rnd = new Random((int)DateTime.Now.Ticks);
 
         public GameWindow(Form form)
@@ -18,7 +18,7 @@ namespace Kids_vs_IceCream
             this.DoubleBuffered = true;
         }
 
-        void timerMouseDown_Tick(object sender, EventArgs e)
+        private void timerMouseDown_Tick(object sender, EventArgs e)
         {
             MessageBox.Show("Test");
         }
@@ -42,13 +42,12 @@ namespace Kids_vs_IceCream
         private void InitializeComponent()
         {
             this.SuspendLayout();
-            // 
+            //
             // GameWindow
-            // 
+            //
             this.ClientSize = new System.Drawing.Size(284, 262);
             this.Name = "GameWindow";
             this.ResumeLayout(false);
         }
-
     }
 }

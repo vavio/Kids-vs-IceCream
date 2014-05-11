@@ -12,7 +12,7 @@ namespace Kids_vs_IceCream
         private Timer timerDrawing;
         private Timer timerNewCloud;
         public Timer timerNewHouse;
-        
+
         private List<Kid> CurrentLevel;
 
         private KidsDoc Kids;
@@ -204,7 +204,6 @@ namespace Kids_vs_IceCream
 
         private void moveEverything(Graphics g)
         {
-
             //Moving Clouds
             Clouds.DrawClouds(g);
             Clouds.MoveClouds();
@@ -222,7 +221,7 @@ namespace Kids_vs_IceCream
             CarItems.Draw(g);
             CarItems.Move();
 
-            this.KidsKilled +=Kids.Hit(Bullets);
+            this.KidsKilled += Kids.Hit(Bullets);
 
             Kids.DrawKids(g);
             Kids.MoveKids(this.Width, this.Height);
@@ -284,7 +283,7 @@ namespace Kids_vs_IceCream
 
         private void timerNextKid_Tick(object sender, EventArgs e)
         {
-            if (gameStarted && CurrentLevel.Count!=0)
+            if (gameStarted && CurrentLevel.Count != 0)
             {
                 Kids.AddKid(CurrentLevel[0]);
                 CurrentLevel.RemoveAt(0);

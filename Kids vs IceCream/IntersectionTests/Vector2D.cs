@@ -1,15 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Kids_vs_IceCream
 {
     public class Vector2D
     {
         public int X { get; set; }
+
         public int Y { get; set; }
 
         public Vector2D(Vector2D vec)
@@ -20,7 +17,6 @@ namespace Kids_vs_IceCream
 
         public Vector2D()
         {
-
         }
 
         public Vector2D(Point point)
@@ -68,7 +64,7 @@ namespace Kids_vs_IceCream
 
         public Vector2D norm()
         {
-            return new Vector2D((int) (this.X/module()), (int) (this.Y/module()));
+            return new Vector2D((int)(this.X / module()), (int)(this.Y / module()));
         }
 
         public float distance(Vector2D v2)

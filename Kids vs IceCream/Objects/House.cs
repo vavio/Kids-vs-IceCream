@@ -7,6 +7,7 @@ namespace Kids_vs_IceCream
     {
         private Random rnd = new Random((int)DateTime.Now.Ticks);
         private readonly float[] AvailablePositions = { 172, 152, 118, 177 };
+
         private readonly Bitmap[] AvailableImages = {   Properties.Resources._1,
                                                         Properties.Resources._2,
                                                         Properties.Resources._3,

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Drawing;
 
 namespace Kids_vs_IceCream
 {
@@ -11,7 +6,8 @@ namespace Kids_vs_IceCream
     {
         private Bitmap Image;
 
-        public Weapon(float x, float y, float velocity, Bitmap image) : base(x,y,velocity)
+        public Weapon(float x, float y, float velocity, Bitmap image)
+            : base(x, y, velocity)
         {
             this.Image = image;
         }
@@ -22,7 +18,7 @@ namespace Kids_vs_IceCream
         }
 
         public override void Move()
-        {   
+        {
             if (!(this.X > 520))
             {
                 X += velocity;

@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Kids_vs_IceCream.Forms
@@ -20,7 +13,7 @@ namespace Kids_vs_IceCream.Forms
             players.Players.Sort();
             foreach (Player iter in players.Players)
             {
-                lbPlayers.Items.Add(iter);   
+                lbPlayers.Items.Add(iter);
             }
         }
 

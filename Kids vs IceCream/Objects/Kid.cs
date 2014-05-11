@@ -1,20 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Kids_vs_IceCream
 {
     public class Kid : IMovingObject, IComparable<Kid>
     {
         public int Lives { get; set; }
+
         public int Up { get; set; }
-        public Bitmap[] Images {get; set;}
+
+        public Bitmap[] Images { get; set; }
+
         public int Counter { get; set; }
 
-        public Kid(float x, float y, float velocity, Bitmap img1, Bitmap img2, int health) : base(x,y,velocity)
+        public Kid(float x, float y, float velocity, Bitmap img1, Bitmap img2, int health)
+            : base(x, y, velocity)
         {
             this.image = img1;
             this.Images = new Bitmap[2];
@@ -32,7 +32,7 @@ namespace Kids_vs_IceCream
 
         public static Kid getKid2()
         {
-           return new Kid(-30, 330, 6, Properties.Resources.enemy_2_1, Properties.Resources.enemy_2_2, 3);
+            return new Kid(-30, 330, 6, Properties.Resources.enemy_2_1, Properties.Resources.enemy_2_2, 3);
         }
 
         public static Kid getKid3()
@@ -64,7 +64,7 @@ namespace Kids_vs_IceCream
             Vector2D topLeft = new Vector2D(this.X, this.Y);
 
             if (VMath.intersectSegmentSegment(a1, a2, topLeft.toPoint(), (topLeft + (new Vector2D(this.image.Width, 0))).toPoint()))
-                ret=true;
+                ret = true;
 
             if (VMath.intersectSegmentSegment(a1, a2, topLeft.toPoint(), (topLeft + (new Vector2D(0, this.image.Height))).toPoint()))
                 ret = true;
@@ -72,7 +72,7 @@ namespace Kids_vs_IceCream
             Vector2D bottomRight = topLeft + (new Vector2D(this.image.Width, this.image.Height));
 
             if (VMath.intersectSegmentSegment(a1, a2, bottomRight.toPoint(), (bottomRight - (new Vector2D(this.image.Width, 0))).toPoint()))
-                ret=true;
+                ret = true;
 
             if (VMath.intersectSegmentSegment(a1, a2, bottomRight.toPoint(), (bottomRight - (new Vector2D(0, this.image.Height))).toPoint()))
                 ret = true;
