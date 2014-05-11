@@ -90,7 +90,7 @@ namespace Kids_vs_IceCream
         private void timerforNewCloud_Tick(object sender, EventArgs e)
         {
             timerNewCloud.Interval = rand.Next(7000, 10000);
-            Clouds.AddCloud(new Cloud(this.ClientRectangle.Width, rand.Next(0, this.ClientRectangle.Height - 300), 1f));
+            Clouds.AddCloud(new Cloud(this.ClientRectangle.Width, rand.Next(0, this.ClientRectangle.Height - 300), 0.5f));
         }
 
         private void timer_Tick(object sender, EventArgs e)
