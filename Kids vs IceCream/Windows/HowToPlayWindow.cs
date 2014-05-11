@@ -46,21 +46,21 @@ namespace Kids_vs_IceCream
             this.label4 = new System.Windows.Forms.Label();
             this.myButtonObject1 = new Kids_vs_IceCream.RoundButton();
             this.SuspendLayout();
-            //
+            // 
             // label1
-            //
+            // 
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(230)))), ((int)(((byte)(255)))));
             this.label1.Font = new System.Drawing.Font("Tempus Sans ITC", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Location = new System.Drawing.Point(105, 51);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(168, 98);
+            this.label1.Size = new System.Drawing.Size(167, 98);
             this.label1.TabIndex = 0;
             this.label1.Text = "The object of the game is to splatter kids with ice cream before get to your truc" +
     "k.";
-            //
+            // 
             // label2
-            //
+            // 
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(230)))), ((int)(((byte)(255)))));
             this.label2.Font = new System.Drawing.Font("Tempus Sans ITC", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -69,22 +69,22 @@ namespace Kids_vs_IceCream
             this.label2.Size = new System.Drawing.Size(167, 65);
             this.label2.TabIndex = 1;
             this.label2.Text = "To shoot ice cream, simply click the mouse";
-            //
+            // 
             // label3
-            //
+            // 
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(230)))), ((int)(((byte)(255)))));
             this.label3.Font = new System.Drawing.Font("Tempus Sans ITC", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label3.Location = new System.Drawing.Point(12, 211);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(130, 54);
+            this.label3.Size = new System.Drawing.Size(158, 54);
             this.label3.TabIndex = 2;
             this.label3.Text = "Thanks for playing and enjoy!!";
-            //
+            // 
             // label4
-            //
+            // 
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(230)))), ((int)(((byte)(255)))));
-            this.label4.Font = new System.Drawing.Font("Tempus Sans ITC", 15.75F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic)
+            this.label4.Font = new System.Drawing.Font("Tempus Sans ITC", 15.75F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label4.Location = new System.Drawing.Point(109, 9);
@@ -92,9 +92,9 @@ namespace Kids_vs_IceCream
             this.label4.Size = new System.Drawing.Size(151, 32);
             this.label4.TabIndex = 3;
             this.label4.Text = "How to play";
-            //
+            // 
             // myButtonObject1
-            //
+            // 
             this.myButtonObject1.BackColor = System.Drawing.Color.LemonChiffon;
             this.myButtonObject1.Location = new System.Drawing.Point(194, 180);
             this.myButtonObject1.Name = "myButtonObject1";
@@ -105,9 +105,9 @@ namespace Kids_vs_IceCream
             this.myButtonObject1.Click += new System.EventHandler(this.myButtonObject1_Click);
             this.myButtonObject1.MouseEnter += new System.EventHandler(this.myButtonObject1_MouseHover);
             this.myButtonObject1.MouseLeave += new System.EventHandler(this.myButtonObject1_MouseLeave);
-            //
+            // 
             // HowToPlayWindow
-            //
+            // 
             this.ClientSize = new System.Drawing.Size(284, 262);
             this.Controls.Add(this.myButtonObject1);
             this.Controls.Add(this.label4);
@@ -117,6 +117,7 @@ namespace Kids_vs_IceCream
             this.Name = "HowToPlayWindow";
             this.Text = "How to play";
             this.ResumeLayout(false);
+
         }
 
         private void myButtonObject1_Click(object sender, EventArgs e)
