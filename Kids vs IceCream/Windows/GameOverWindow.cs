@@ -141,6 +141,7 @@ namespace Kids_vs_IceCream
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+            this.DialogResult = DialogResult.No;
         }
 
         private void GameOverWindow_FormClosing(object sender, FormClosingEventArgs e)
